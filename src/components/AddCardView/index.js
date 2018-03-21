@@ -5,7 +5,8 @@ import { loadCard } from "../../actions/index";
 import { addCardToDeck} from "../../utils/api";
 import t from 'tcomb-form-native';
 import { ScrollView, View, StyleSheet } from 'react-native'
-import { Toast, Button, Text } from 'native-base';
+import { Toast, Button, Text, Header, Title, Left, Right, Body} from 'native-base';
+import { Entypo } from '@expo/vector-icons'
 
 
 const Form = t.form.Form;
@@ -80,6 +81,11 @@ const options = {
 
 class AddCardView extends Component {
 
+    static navigationOptions = ({ navigation }) => {
+        return {
+            title: 'NEW CARD'
+        }
+    }
     //
     // getInitialState() {
     //     return { value: null };
@@ -113,6 +119,20 @@ class AddCardView extends Component {
 
         return (
             <ScrollView>
+            {/*<Header>*/}
+                {/*<Left>*/}
+                    {/*/!*<Button transparent>*!/*/}
+                        {/*/!*<Entypo*!/*/}
+                            {/*/!*name={ 'menu' }*!/*/}
+                            {/*/!*color = {'black'}*!/*/}
+                            {/*/!*size={30} />*!/*/}
+                    {/*/!*</Button>*!/*/}
+                {/*</Left>*/}
+                {/*<Body>*/}
+                {/*<Title style={{fontSize:20}}>NEW CARD</Title>*/}
+                {/*</Body>*/}
+                {/*<Right />*/}
+            {/*</Header>*/}
             <View style={styles.container}>
                 <View style={styles.formContainer}>
                     <Form
@@ -137,11 +157,11 @@ class AddCardView extends Component {
                         <Text>BACK TO DECK</Text>
                     </Button>
 
-                    {/* Why is this navigation not working? */}
+                     {/*Why is this navigation not working? */}
                     {/*<Button*/}
                         {/*block light*/}
                         {/*onPress={() =>*/}
-                            {/*this.props.navigation.dispatch(NavigationActions.back({key: 'DeckDetailView'}))*/}
+                            {/*this.props.navigation.dispatch(NavigationActions.back())*/}
                         {/*}>*/}
                         {/*<Text>GO HOME</Text>*/}
                     {/*</Button>*/}

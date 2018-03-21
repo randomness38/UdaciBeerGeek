@@ -30,6 +30,13 @@ const DeckListStack = StackNavigator({
             }
         }
     },
+    // AddCardView:{
+    //     screen: AddCardView,
+    //     navigationOptions: {
+    //         header: null,
+    //         // mode: 'modal',
+    //     }
+    // },
 })
 
 const NewDeckStack = StackNavigator({
@@ -42,15 +49,26 @@ const NewDeckStack = StackNavigator({
             }
         },
     },
+    // AddCardView:{
+    //     screen: AddCardView,
+    //     navigationOptions: {
+    //         header: null,
+    //         mode: 'modal',
+    //     }
+    // },
+})
+
+const AddCardViewStack = StackNavigator({
     AddCardView:{
         screen: AddCardView,
         // navigationOptions: {
-        //     header: null,
-        //     mode: 'modal',
+        //     headerTintColor: white,
+        //     headerStyle: {
+        //         backgroundColor: purple,
+        //     }
         // }
-    },
+    }
 })
-
 const QuizViewStack = StackNavigator({
     QuizCard:{
         screen: QuizCard,
@@ -123,10 +141,12 @@ export default MainNavigator = StackNavigator({
     QuizView: {
         screen: QuizViewStack,
     },
+    AddCardView: {
+        screen: AddCardViewStack,
+    }
 }, {
     mode: 'modal',
     headerMode: 'none',
-
 })
 
 

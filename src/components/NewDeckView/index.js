@@ -32,6 +32,13 @@ class NewDeckView extends Component {
         )
     }
 
+    navigateDeckDetailVew() {
+        this.props.navigation.navigate(
+            'DeckDetailView',
+            { deckId : this.state.title }
+        )
+    }
+
     // toHome = () => {
     //     this.props.navigation.dispatch(NavigationActions.back({key: 'DeckListView'}))
     // }

@@ -3,7 +3,7 @@ import { View, StyleSheet, TouchableOpacity } from 'react-native'
 import { connect } from 'react-redux'
 import { Feather,MaterialCommunityIcons } from '@expo/vector-icons'
 import {  Button, Text } from 'native-base';
-import { purple, white, black, red } from '../../utils/colors'
+import { purple, white, black, gray, red } from '../../utils/colors'
 
 class CompletedView extends Component {
 
@@ -63,6 +63,18 @@ class CompletedView extends Component {
                         Back to deck
                     </Text>
                 </TouchableOpacity>
+                <TouchableOpacity
+                    style={styles.RestartBtn}
+                    onPress={() => this.props.navigation.navigate(
+                        'QuizView',
+                        { deckId, cardIndex : 0, score : 0, fail : 0 }
+                    )}
+                >
+                    <Text style={styles.restartBtnText}
+                    >
+                        Restart Quiz
+                    </Text>
+                </TouchableOpacity>
             </View>
         )
     }
@@ -91,9 +103,38 @@ const styles = StyleSheet.create({
         padding: 20,
         borderRadius: 7,
         height: 35,
+        shadowColor: 'rgba(0, 0, 0, 0.24)',
+        shadowOffset: {
+            width: 0,
+            height: 3
+        },
+        shadowRadius: 6,
+        shadowOpacity: 1
     },
+
+    RestartBtn: {
+        justifyContent:'center',
+        backgroundColor: white,
+        padding: 20,
+        borderRadius: 7,
+        height: 35,
+        shadowColor: 'rgba(0, 0, 0, 0.24)',
+        shadowOffset: {
+            width: 0,
+            height: 3
+        },
+        shadowRadius: 3,
+        shadowOpacity: 1
+    },
+
     backBtnText: {
         color: white,
+        fontSize: 22,
+        textAlign: 'center',
+    },
+
+    restartBtnText: {
+        color: purple,
         fontSize: 22,
         textAlign: 'center',
     },
