@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
-import { View, StyleSheet, TouchableOpacity } from 'react-native'
+import { View, StyleSheet } from 'react-native'
 import { connect } from 'react-redux'
-import { NavigationActions } from 'react-navigation'
-import { Form, Toast, Item,  Input, Button, Text } from 'native-base';
+import { Toast, Button, Text } from 'native-base';
 import TitleInput from './TitileInput'
-import { purple, black } from '../../utils/colors'
+import { purple } from '../../utils/colors'
 import { receiveDecks, loadDeck } from '../../actions'
 import * as api from '../../utils/api'
 
@@ -25,12 +24,13 @@ class NewDeckView extends Component {
         }))
     }
 
-    navigateAddCardView() {
-        this.props.navigation.navigate(
-            'AddCardView',
-            { deckId : this.state.title }
-        )
-    }
+    // Deck 만들고 바로 Card 로 넘어가는게 좋지 않을까합니다. 가이드는 Deck Detail 로 가라는뎁
+    // navigateAddCardView() {
+    //     this.props.navigation.navigate(
+    //         'AddCardView',
+    //         { deckId : this.state.title }
+    //     )
+    // }
 
     navigateDeckDetailVew() {
         this.props.navigation.navigate(
@@ -38,10 +38,6 @@ class NewDeckView extends Component {
             { deckId : this.state.title }
         )
     }
-
-    // toHome = () => {
-    //     this.props.navigation.dispatch(NavigationActions.back({key: 'DeckListView'}))
-    // }
 
     popToast = () => {
         Toast.show({
@@ -52,15 +48,13 @@ class NewDeckView extends Component {
     }
     saveTitle = () => {
         const { title } = this.state
-        // const deck = {title: title, questions:[]}
-        // 이것도 ...state, [title] : deck 이렇게 concat 하는 reducer 구조지
         if (this.state.title === "" ) {
             this.popToast()
         } else {
             this.props.loadDeck({ [title]: {title: title, questions:[]} })
             api.saveDeckTitle(this.state.title)
             this.setState( () => ({ title : ""}) )
-            this.navigateAddCardView()
+            this.navigateDeckDetailVew()
         }
     }
 
@@ -103,20 +97,3 @@ export default connect(
     null,
     { receiveDecks, loadDeck }
 )(NewDeckView)
-
-
-
-// function mapStateToProps (state) {
-//
-//     return {
-//         decks: state.decks
-//     }
-// }
-//
-//
-//
-// export default connect(
-//     mapStateToProps,
-//     { receiveDecks, loadDeck }
-// )(NewDeckView)
-

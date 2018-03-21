@@ -147,24 +147,24 @@ class AddCardView extends Component {
                         <Text>SAVE</Text>
                     </Button>
 
-                    {/* double stack same deck view*/}
-                    <Button
-                        block light
-                        onPress={() => this.props.navigation.navigate(
-                            'DeckDetailView',
-                            { deckId }
-                        )}>
-                        <Text>BACK TO DECK</Text>
-                    </Button>
-
-                     {/*Why is this navigation not working? */}
+                    {/* NewDeckView -> AddCardView 로 이동할 때 */}
                     {/*<Button*/}
                         {/*block light*/}
-                        {/*onPress={() =>*/}
-                            {/*this.props.navigation.dispatch(NavigationActions.back())*/}
-                        {/*}>*/}
-                        {/*<Text>GO HOME</Text>*/}
+                        {/*onPress={() => this.props.navigation.navigate(*/}
+                            {/*'DeckDetailView',*/}
+                            {/*{ deckId }*/}
+                        {/*)}>*/}
+                        {/*<Text>BACK TO DECK</Text>*/}
                     {/*</Button>*/}
+
+                    {/* NewDeckView -> DeckDetailView 로 이동할 때 */}
+                    <Button
+                        block light
+                        onPress={() =>
+                            this.props.navigation.dispatch(NavigationActions.back())
+                        }>
+                        <Text>GO HOME</Text>
+                    </Button>
                 </View>
             </View>
         </ScrollView>
