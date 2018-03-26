@@ -56,7 +56,7 @@ const objectiveItem = t.String
 const Card = t.struct({
     question: t.String,
     answer: t.String,
-    incorrectAnswers: t.list(objectiveItem)
+    opts: t.list(objectiveItem)
 });
 
 const options = {
@@ -69,7 +69,7 @@ const options = {
             label: 'Answer',
             placeholder: 'enter your answer'
         },
-        incorrectAnswers: {
+        opts: {
             item: {
                 label: 'Incorrect Item',
                 placeholder: 'incorrect answer'

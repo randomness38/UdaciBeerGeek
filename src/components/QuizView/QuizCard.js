@@ -47,8 +47,8 @@ class QuizCard extends Component {
     }
 
     getRandomOptions(){
-        let { answer, incorrectAnswers} = this.props
-        let optionArray = incorrectAnswers.concat(answer)
+        let { answer, opts} = this.props
+        let optionArray = opts.concat(answer)
         let randomArray = optionArray.sort( function() { return 0.5 - Math.random() } );
 
         return randomArray
@@ -124,7 +124,7 @@ function mapStateToProps ({ decks }, { navigation }) {
         finalIndex: decks[deckId].questions.length - 1,
         question: decks[deckId].questions[cardIndex].question,
         answer: decks[deckId].questions[cardIndex].answer,
-        incorrectAnswers: decks[deckId].questions[cardIndex].incorrectAnswers
+        opts: decks[deckId].questions[cardIndex].opts
     }
 }
 

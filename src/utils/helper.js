@@ -14,12 +14,12 @@ function setDummyData () {
                 {
                     question: 'Which of the following is an Imperial Stout or Porter',
                     answer: 'Oskar Blues Ten Fidy',
-                    incorrectAnswers: ['Kross5', 'Emelisse Lentebock', "Bell's Oarsman", 'Hitachino Nest White Ale']
+                    opts: ['Kross5', 'Emelisse Lentebock', "Bell's Oarsman", 'Hitachino Nest White Ale']
                 },
                 {
                     question: 'Which of the following is not a Weissbier Family',
                     answer: 'Magic Rock Magic 8 Ball',
-                    incorrectAnswers: ['Schneider Aventinus', 'Schneider Tap5', "Piece Dark-n-Curvy", 'The Kernel API']
+                    opts: ['Schneider Aventinus', 'Schneider Tap5', "Piece Dark-n-Curvy", 'The Kernel API']
 
                 }
             ]
@@ -30,7 +30,7 @@ function setDummyData () {
                 {
                     question: 'Which of the following is an last step of the brewing process',
                     answer: 'Fermentation & Conditioning',
-                    incorrectAnswers: ['Copper / Kettle', 'Mash Tun', "Whirlpool", 'Colling']
+                    opts: ['Copper / Kettle', 'Mash Tun', "Whirlpool", 'Colling']
                 }
             ]
         }
