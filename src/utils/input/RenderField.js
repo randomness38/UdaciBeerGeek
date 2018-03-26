@@ -1,13 +1,23 @@
 import React from 'react';
-import {View, Text, ScrollView, TextInput, Button } from 'react-native'
+import {View, Text, TextInput, StyleSheet, Keyboard } from 'react-native'
 
 
-export default RenderField = ({ input, label, type, meta: { touched, error } }) => {
+
+export default RenderField = ({ reInput, onReChange, input, label, meta: { touched, error, dirty } }) => {
+
     return (
         <View>
             <Text style={{fontSize:20}}>{label}</Text>
-            <TextInput style={{fontSize:20}} {...input} type={type} placeholder={label} />
+            <TextInput
+                style={{fontSize:20, height:30}}
+                value={reInput || (dirty?undefined : input.value)}
+                onChangeText={onReChange}
+                placeholder={label}
+                onSubmitEditing={Keyboard.dismiss}
+                {...input}
+            />
             {touched && error && <Text style={{ color: 'red' }}>{error}</Text>}
         </View>
     )
+
 }

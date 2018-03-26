@@ -35,38 +35,38 @@ class NewDeckForm extends Component {
                     <Button type="button" disabled={pristine || submitting} onPress={reset} title='Clear Values' />
                 </View>
 
-                <View>
+                {/*<View>*/}
 
-                    <Field
-                        name={`question`}
-                        type="text"
-                        component={RenderField}
-                        label="Question"
-                        onReChange={(text) =>this.onReChange(text)}
-                        reInput={this.state.reInput}
-                    />
+                    {/*<Field*/}
+                        {/*name={`question`}*/}
+                        {/*type="text"*/}
+                        {/*component={RenderField}*/}
+                        {/*label="Question"*/}
+                        {/*onReChange={(text) =>this.onReChange(text)}*/}
+                        {/*reInput={this.state.reInput}*/}
+                    {/*/>*/}
 
-                    <Field
-                        name={`answer`}
-                        type="text"
-                        component={RenderField}
-                        label="Answer"
-                        onReChange={(text) =>this.onReChange(text)}
-                        reInput={this.state.reInput}
-                    />
+                    {/*<Field*/}
+                        {/*name={`answer`}*/}
+                        {/*type="text"*/}
+                        {/*component={RenderField}*/}
+                        {/*label="Answer"*/}
+                        {/*onReChange={(text) =>this.onReChange(text)}*/}
+                        {/*reInput={this.state.reInput}*/}
+                    {/*/>*/}
 
-                    <FieldArray
-                        name={`opts`}
-                        component={RenderOpts}
-                        onReChange={(text) =>this.onReChange(text)}
-                        reInput={this.state.reInput}
-                    />
+                    {/*<FieldArray*/}
+                        {/*name={`opts`}*/}
+                        {/*component={RenderOpts}*/}
+                        {/*onReChange={(text) =>this.onReChange(text)}*/}
+                        {/*reInput={this.state.reInput}*/}
+                    {/*/>*/}
 
-                    <View>
-                        <RemoteSubmitButton/>
-                        <Button type="button" disabled={pristine || submitting} onPress={reset} title='Clear Values' />
-                    </View>
-                </View>
+                    {/*<View>*/}
+                        {/*<RemoteSubmitButton/>*/}
+                        {/*<Button type="button" disabled={pristine || submitting} onPress={reset} title='Clear Values' />*/}
+                    {/*</View>*/}
+                {/*</View>*/}
 
 
             </ScrollView>
@@ -77,4 +77,4 @@ class NewDeckForm extends Component {
 export default reduxForm({
     form: 'deckForm', // a unique identifier for this form
     validate,
-})(FieldArraysForm);
+})(NewDeckForm);
