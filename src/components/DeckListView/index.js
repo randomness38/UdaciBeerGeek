@@ -55,6 +55,7 @@ class DeckListView extends Component {
         if (this.state.noDeck) {
             return <NoDeckView />
         }
+        console.log('[관찰]decks: ' + decks)
         return (
             <ScrollView>
                 {/*deckId = key*/}
@@ -71,7 +72,9 @@ class DeckListView extends Component {
                                     )}
                                 >
                                     <DeckListItem
-                                        onClear={() => removeDeck(key)}
+                                        onClear={() => removeDeck(key).then(()=>{
+                                            this.fetchData()
+                                        })}
                                         title={key}
                                         cardNum={cardNum}/>
                                 </TouchableOpacity>

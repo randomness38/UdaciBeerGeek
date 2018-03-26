@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67cdddd9-6778-4d26-aa49-32cf748df97c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/reducers/decks.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers/index.js" afterPath="$PROJECT_DIR$/src/reducers/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/DeckListView/index.js" afterPath="$PROJECT_DIR$/src/components/DeckListView/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,10 +17,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/NewDeckView/index.js">
+        <entry file="file://$PROJECT_DIR$/src/components/DeckDetailView/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1487">
-              <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+            <state relative-caret-position="7">
+              <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -30,84 +28,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="api.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/api.js">
+      <file leaf-file-name="QuizControl.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/DeckDetailView/QuizControl.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="helper.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/helper.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="564">
-              <caret line="32" column="36" lean-forward="false" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-              <folding>
-                <marker date="1522061125440" expanded="true" signature="304:1494" ph="{...}" />
-                <marker date="1522061125440" expanded="true" signature="327:1399" ph="{...}" />
-                <marker date="1522061125440" expanded="true" signature="343:574" ph="{&quot;title&quot;: 'Beer'...}" />
-                <marker date="1522061125440" expanded="true" signature="395:574" ph="[...]" />
-                <marker date="1522061125440" expanded="true" signature="413:574" ph="{&quot;question&quot;: 'Which of the following is an Imperial Stout or Porter'...}" />
-                <marker date="1522061125440" expanded="true" signature="1293:1369" ph="{&quot;question&quot;: 'Which of the following is an last step of the brewing process'...}" />
-                <marker date="1522061125440" expanded="true" signature="1293:1383" ph="[...]" />
-                <marker date="1522061125440" expanded="true" signature="1293:1393" ph="{&quot;title&quot;: 'JavaScript'...}" />
-                <marker date="1522061125440" expanded="true" signature="1540:1671" ph="{...}" />
-                <marker date="1522061125440" expanded="true" signature="1673:1753" ph="//..." />
-                <marker date="1522061125440" expanded="true" signature="1796:1918" ph="{...}" />
-                <marker date="1522061125440" expanded="true" signature="1951:2241" ph="{...}" />
-                <marker date="1522061125440" expanded="true" signature="1964:2239" ph="{&quot;title&quot;: 'Keep Going!'...}" />
-                <marker date="1522061125440" expanded="true" signature="2058:2094" ph="{...}" />
-                <marker date="1522061125440" expanded="true" signature="2113:2233" ph="{&quot;priority&quot;: 'high'...}" />
-                <marker date="1522061125440" expanded="true" signature="2283:3374" ph="{...}" />
-                <marker date="1522061125440" expanded="true" signature="2378:3371" ph="{...}" />
-                <marker date="1522061125440" expanded="true" signature="2411:3361" ph="{...}" />
-                <marker date="1522061125440" expanded="true" signature="2519:3346" ph="{...}" />
-                <marker date="1522061125440" expanded="true" signature="2571:3324" ph="{...}" />
-                <marker date="1522061125440" expanded="true" signature="3040:3178" ph="{&quot;time&quot;: tomorrow...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuizCard.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/QuizView/QuizCard.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="130" column="86" lean-forward="false" selection-start-line="130" selection-start-column="86" selection-end-line="130" selection-end-column="86" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-                <marker date="1522061128774" expanded="true" signature="617:1564" ph="{...}" />
-                <marker date="1522061128774" expanded="true" signature="1540:1564" ph="{...}" />
-                <marker date="1522061128774" expanded="true" signature="4048:4055" ph="{&quot;deckId&quot;: deckId...}" />
-                <marker date="1522061128774" expanded="true" signature="4048:4057" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/DeckListView/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/AddCardView/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="298">
+              <caret line="185" column="30" lean-forward="false" selection-start-line="185" selection-start-column="30" selection-end-line="185" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeckListItem.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/DeckListView/DeckListItem.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="754">
+              <caret line="29" column="40" lean-forward="false" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="40" />
               <folding>
-                <element signature="e#0#40#0" expanded="true" />
+                <element signature="e#0#25#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/DeckListView/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="75" column="60" lean-forward="true" selection-start-line="75" selection-start-column="60" selection-end-line="75" selection-end-column="60" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -115,8 +73,8 @@
       <file leaf-file-name="decks.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reducers/decks.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="974">
-              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="306">
+              <caret line="22" column="43" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -155,12 +113,12 @@
         <option value="$PROJECT_DIR$/src/config/router.js" />
         <option value="$PROJECT_DIR$/src/components/NewDeckView/index.js" />
         <option value="$PROJECT_DIR$/src/components/AddCardView/index.js" />
-        <option value="$PROJECT_DIR$/src/components/DeckListView/index.js" />
         <option value="$PROJECT_DIR$/src/components/QuizView/CompletedView.js" />
         <option value="$PROJECT_DIR$/src/components/QuizView/QuizCard.js" />
         <option value="$PROJECT_DIR$/src/components/DeckDetailView/index.js" />
         <option value="$PROJECT_DIR$/src/reducers/decks.js" />
         <option value="$PROJECT_DIR$/src/reducers/index.js" />
+        <option value="$PROJECT_DIR$/src/components/DeckListView/index.js" />
       </list>
     </option>
   </component>
@@ -183,8 +141,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="124" />
-    <option name="y" value="38" />
+    <option name="y" value="26" />
     <option name="width" value="1390" />
     <option name="height" value="1027" />
   </component>
@@ -206,7 +163,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -288,7 +245,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -327,43 +284,33 @@
       <workItem from="1521574452597" duration="795000" />
       <workItem from="1521575650801" duration="449000" />
       <workItem from="1521619058198" duration="14601000" />
+      <workItem from="1522072743650" duration="1582000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17418000" />
+    <option name="totallyTimeSpent" value="19000000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1160" height="1027" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="26" width="1390" height="1027" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21034482" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2294964" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2294964" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,14 +324,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/DeckListView/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="148" column="0" lean-forward="false" selection-start-line="148" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/DeckListView/NoDeckView.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -448,29 +387,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1522061125440" expanded="true" signature="304:1494" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="327:1399" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="343:574" ph="{&quot;title&quot;: 'Beer'...}" />
-            <marker date="1522061125440" expanded="true" signature="395:574" ph="[...]" />
-            <marker date="1522061125440" expanded="true" signature="413:574" ph="{&quot;question&quot;: 'Which of the following is an Imperial Stout or Porter'...}" />
-            <marker date="1522061125440" expanded="true" signature="1293:1369" ph="{&quot;question&quot;: 'Which of the following is an last step of the brewing process'...}" />
-            <marker date="1522061125440" expanded="true" signature="1293:1383" ph="[...]" />
-            <marker date="1522061125440" expanded="true" signature="1293:1393" ph="{&quot;title&quot;: 'JavaScript'...}" />
-            <marker date="1522061125440" expanded="true" signature="1540:1671" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="1673:1753" ph="//..." />
-            <marker date="1522061125440" expanded="true" signature="1796:1918" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="1951:2241" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="1964:2239" ph="{&quot;title&quot;: 'Keep Going!'...}" />
-            <marker date="1522061125440" expanded="true" signature="2058:2094" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="2113:2233" ph="{&quot;priority&quot;: 'high'...}" />
-            <marker date="1522061125440" expanded="true" signature="2283:3374" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="2378:3371" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="2411:3361" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="2519:3346" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="2571:3324" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="3040:3178" ph="{&quot;time&quot;: tomorrow...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -541,29 +458,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1522061125440" expanded="true" signature="304:1494" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="327:1399" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="343:574" ph="{&quot;title&quot;: 'Beer'...}" />
-            <marker date="1522061125440" expanded="true" signature="395:574" ph="[...]" />
-            <marker date="1522061125440" expanded="true" signature="413:574" ph="{&quot;question&quot;: 'Which of the following is an Imperial Stout or Porter'...}" />
-            <marker date="1522061125440" expanded="true" signature="1293:1369" ph="{&quot;question&quot;: 'Which of the following is an last step of the brewing process'...}" />
-            <marker date="1522061125440" expanded="true" signature="1293:1383" ph="[...]" />
-            <marker date="1522061125440" expanded="true" signature="1293:1393" ph="{&quot;title&quot;: 'JavaScript'...}" />
-            <marker date="1522061125440" expanded="true" signature="1540:1671" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="1673:1753" ph="//..." />
-            <marker date="1522061125440" expanded="true" signature="1796:1918" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="1951:2241" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="1964:2239" ph="{&quot;title&quot;: 'Keep Going!'...}" />
-            <marker date="1522061125440" expanded="true" signature="2058:2094" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="2113:2233" ph="{&quot;priority&quot;: 'high'...}" />
-            <marker date="1522061125440" expanded="true" signature="2283:3374" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="2378:3371" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="2411:3361" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="2519:3346" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="2571:3324" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="3040:3178" ph="{&quot;time&quot;: tomorrow...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -636,36 +531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/helper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="32" column="36" lean-forward="false" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-          <folding>
-            <marker date="1522061125440" expanded="true" signature="304:1494" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="327:1399" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="343:574" ph="{&quot;title&quot;: 'Beer'...}" />
-            <marker date="1522061125440" expanded="true" signature="395:574" ph="[...]" />
-            <marker date="1522061125440" expanded="true" signature="413:574" ph="{&quot;question&quot;: 'Which of the following is an Imperial Stout or Porter'...}" />
-            <marker date="1522061125440" expanded="true" signature="1293:1369" ph="{&quot;question&quot;: 'Which of the following is an last step of the brewing process'...}" />
-            <marker date="1522061125440" expanded="true" signature="1293:1383" ph="[...]" />
-            <marker date="1522061125440" expanded="true" signature="1293:1393" ph="{&quot;title&quot;: 'JavaScript'...}" />
-            <marker date="1522061125440" expanded="true" signature="1540:1671" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="1673:1753" ph="//..." />
-            <marker date="1522061125440" expanded="true" signature="1796:1918" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="1951:2241" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="1964:2239" ph="{&quot;title&quot;: 'Keep Going!'...}" />
-            <marker date="1522061125440" expanded="true" signature="2058:2094" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="2113:2233" ph="{&quot;priority&quot;: 'high'...}" />
-            <marker date="1522061125440" expanded="true" signature="2283:3374" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="2378:3371" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="2411:3361" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="2519:3346" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="2571:3324" ph="{...}" />
-            <marker date="1522061125440" expanded="true" signature="3040:3178" ph="{&quot;time&quot;: tomorrow...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -717,39 +582,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/AddCardView/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="185" column="30" lean-forward="false" selection-start-line="185" selection-start-column="30" selection-end-line="185" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/DeckDetailView/QuizControl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-967">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/DeckListView/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/NewDeckView/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1487">
-          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/NewDeckView/TitileInput.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -776,22 +608,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2657">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/QuizView/QuizCard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="130" column="86" lean-forward="false" selection-start-line="130" selection-start-column="86" selection-end-line="130" selection-end-column="86" />
+        <state relative-caret-position="307">
+          <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
-            <marker date="1522061128774" expanded="true" signature="617:1564" ph="{...}" />
-            <marker date="1522061128774" expanded="true" signature="1540:1564" ph="{...}" />
-            <marker date="1522061128774" expanded="true" signature="4048:4055" ph="{&quot;deckId&quot;: deckId...}" />
-            <marker date="1522061128774" expanded="true" signature="4048:4057" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -803,38 +628,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/DeckListView/DeckListItem.js">
+    <entry file="file://$PROJECT_DIR$/src/components/NewDeckView/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/DeckDetailView/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="38" column="34" lean-forward="true" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+        <state relative-caret-position="-1950">
+          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/decks.js">
+    <entry file="file://$PROJECT_DIR$/src/utils/api.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="974">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/helper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="32" column="36" lean-forward="false" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#215#255#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/AddCardView/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="185" column="30" lean-forward="false" selection-start-line="185" selection-start-column="30" selection-end-line="185" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DeckDetailView/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7">
+          <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DeckDetailView/QuizControl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DeckListView/DeckListItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="29" column="40" lean-forward="false" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/decks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="43" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DeckListView/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="75" column="60" lean-forward="true" selection-start-line="75" selection-start-column="60" selection-end-line="75" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>
