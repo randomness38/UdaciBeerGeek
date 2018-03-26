@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Toast } from 'native-base';
-
 import { View, Text, StyleSheet } from 'react-native'
 import DeckListItem from '../DeckListView/DeckListItem'
 import QuizControl from './QuizControl'
