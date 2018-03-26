@@ -3,24 +3,24 @@ import {View, Text, ScrollView, TextInput, Button } from 'react-native'
 import { Field, FieldArray, reduxForm } from 'redux-form';
 import validate from "../../utils/input/validate";
 import RenderField from "../../utils/input/RenderField";
-import RemoteSubmitButton from "../../utils/input/RemoteSubmitButton";
+// import RemoteSubmitButton from "../../utils/input/RemoteSubmitButton";
 
 class NewDeckForm extends Component {
-
     state = {
         reInput: ""
     }
-
     onReChange = (text) => {
         this.setState({ ...this.state, reInput: text });
     }
-
-
+    // saveTitle = () => {
+    //     this.props.handleSubmit()
+    //     // this.props.reset()
+    // }
     render(){
         const { handleSubmit, pristine, reset, submitting } = this.props;
 
         return (
-            <ScrollView onSubmit={handleSubmit}>
+            <ScrollView>
                 <View>
                     <Field
                         name="title"
@@ -31,7 +31,7 @@ class NewDeckForm extends Component {
                         reInput={this.state.reInput}
                     />
 
-                    <RemoteSubmitButton/>
+                    <Button type="button" onPress={handleSubmit} title='Save' />
                     <Button type="button" disabled={pristine || submitting} onPress={reset} title='Clear Values' />
                 </View>
 
@@ -76,5 +76,6 @@ class NewDeckForm extends Component {
 
 export default reduxForm({
     form: 'deckForm', // a unique identifier for this form
+    // onSubmit: (values) => this.props.handleSubmit(values),
     validate,
 })(NewDeckForm);

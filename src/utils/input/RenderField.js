@@ -3,7 +3,10 @@ import {View, Text, TextInput, StyleSheet, Keyboard } from 'react-native'
 
 
 
-export default RenderField = ({ reInput, onReChange, input, label, meta: { touched, error, dirty } }) => {
+export default RenderField = ({ reInput, onReChange,
+                                  input,
+                                  label,
+                                  meta: { touched, error, dirty }}) => {
 
     return (
         <View>

@@ -43,10 +43,7 @@ class DeckListView extends Component {
 
 
     render() {
-        const { decks, removeDeck,clearAllDecks ,state} = this.props
-        console.log('state:' + state)
-        // console.log('decks:' + decks['Beer'].questions)
-
+        const { decks, removeDeck,clearAllDecks } = this.props
         const { ready } = this.state
         if (ready === false) {
             return <AppLoading />
@@ -55,7 +52,6 @@ class DeckListView extends Component {
         if (this.state.noDeck) {
             return <NoDeckView />
         }
-        console.log('[관찰]decks: ' + decks)
         return (
             <ScrollView>
                 {/*deckId = key*/}
@@ -148,7 +144,6 @@ const styles = StyleSheet.create({
 
 function mapStateToProps (state) {
     return {
-        state,
         decks: state.decks,
     }
 }
