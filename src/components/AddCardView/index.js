@@ -2,82 +2,12 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import { NavigationActions } from 'react-navigation'
 import { loadCard } from "../../actions/index";
+import {reset} from 'redux-form';
 import { addCardToDeck} from "../../utils/api";
-import t from 'tcomb-form-native';
 import { ScrollView, View, StyleSheet } from 'react-native'
-import { Toast, Button, Text, Header, Title, Left, Right, Body} from 'native-base';
+import { Button, Text } from 'native-base';
 import { Entypo } from '@expo/vector-icons'
-
-
-const Form = t.form.Form;
-
-
-const formStyles = {
-    ...Form.stylesheet,
-    formGroup: {
-        normal: {
-            marginBottom: 10,
-        },
-    },
-    controlLabel: {
-        normal: {
-            color: '#292477',
-            fontSize: 18,
-            marginBottom: 7,
-            fontWeight: '600'
-        },
-        error: {
-            color: 'red',
-            fontSize: 18,
-            marginBottom: 7,
-            fontWeight: '600'
-        }
-    },
-    buttonText: {
-        fontSize: 20,
-        color: "white",
-        alignSelf: "center"
-    },
-    button: {
-        height: 40,
-        backgroundColor: '#292477',
-        borderColor: '#4e4cb8',
-        borderWidth: 1,
-        borderRadius: 8,
-        marginBottom: 10,
-        alignSelf: "stretch",
-        justifyContent: "center"
-    }
-}
-
-
-const objectiveItem = t.String
-
-const Card = t.struct({
-    question: t.String,
-    answer: t.String,
-    opts: t.list(objectiveItem)
-});
-
-const options = {
-    fields: {
-        question: {
-            label: 'Question',
-            placeholder: 'enter your question'
-        },
-        answer: {
-            label: 'Answer',
-            placeholder: 'enter your answer'
-        },
-        opts: {
-            item: {
-                label: 'Incorrect Item',
-                placeholder: 'incorrect answer'
-            }
-        },
-    },
-    stylesheet: formStyles,
-}
+import AddCardForm from "./AddCardForm";
 
 class AddCardView extends Component {
 
@@ -86,56 +16,25 @@ class AddCardView extends Component {
             title: 'NEW CARD'
         }
     }
-    //
-    // getInitialState() {
-    //     return { value: null };
-    // }
-    //
-    // onChange(value) {
-    //     this.setState({ value });
-    // }
 
-    clearForm() {
-        this.setState({ value: null });
-    }
-
-    handleSubmit = () => {
-        const { deckId } = this.props;
-        const value = this._form.getValue();
-
-        if (value) {
-            this.props.loadCard(deckId,value);
-            addCardToDeck(deckId, value);
-            this.clearForm();
-            Toast.show({
-                text: ' The card has been saved successfully',
-                position: 'bottom',
-                buttonText: 'Okay'
-            })
-        }
+    handleSubmit = (values) => {
+        console.log(values)
+        const { loadCard, reset, deckId } = this.props
+            loadCard(deckId,values);
+            addCardToDeck(deckId, values);
+            reset('deckForm');
     }
 
 
     render() {
-        const { deckId } = this.props
-
         return (
             <ScrollView>
                 <View style={styles.container}>
                     <View style={styles.formContainer}>
-                        <Form
-                            ref={c => this._form = c}
-                            type={Card}
-                            options={options}
 
-                        />
+                        <AddCardForm onSubmit={this.handleSubmit} />
 
-                        <Button block
-                                onPress={this.handleSubmit}>
-                            <Text>SAVE</Text>
-                        </Button>
-
-                        {/* NewDeckView -> AddCardView 로 이동할 때 */}
+                        {/*NewDeckView -> AddCardView 로 이동할 때 */}
                         {/*<Button*/}
                         {/*block light*/}
                         {/*onPress={() => this.props.navigation.navigate(*/}
@@ -179,11 +78,11 @@ const styles = StyleSheet.create({
 })
 
 
-function mapStateToProps ( {decks}, { navigation }) {
+// navigation 쓰려면 state return 안해도 넣어줘야 함니둥 **
+function mapStateToProps ( state, { navigation }) {
     const { deckId } = navigation.state.params
 
     return {
-        // deck : state.decks[deckId],
         deckId : deckId
     }
 }
@@ -191,5 +90,5 @@ function mapStateToProps ( {decks}, { navigation }) {
 
 export default connect(
     mapStateToProps,
-    { loadCard }
+    { loadCard, reset }
 )(AddCardView)
