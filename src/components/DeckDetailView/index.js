@@ -30,7 +30,8 @@ class DeckDetailView extends Component {
     }
 
     render() {
-        const { deck, deckId,questions } = this.props
+        const { deck,state, deckId,questions } = this.props
+        console.log(questions)
         const cardIndex = 0;
         const score = 0;
         const fail = 0;
@@ -40,7 +41,7 @@ class DeckDetailView extends Component {
                 {/*<DeckListItem title={deckId} />*/}
                 <QuizControl
                     name={'START QUIZ'}
-                    onPress={questions ? this.onToast : () => this.props.navigation.navigate(
+                    onPress={questions.length === 0 ? this.onToast : () => this.props.navigation.navigate(
                         'QuizView',
                         { deckId, cardIndex, score, fail }
                     )}
@@ -72,6 +73,7 @@ function mapStateToProps (state, { navigation }) {
     const { deckId } = navigation.state.params
 
     return {
+        state: state,
         deckId,
         deck: state[deckId],
         questions: state[deckId].questions

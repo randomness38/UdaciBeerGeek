@@ -125,6 +125,10 @@ function mapStateToProps (state, { navigation }) {
         question: state[deckId].questions[cardIndex].question,
         answer: state[deckId].questions[cardIndex].answer,
         incorrectAnswers: state[deckId].questions[cardIndex].incorrectAnswers
+        // finalIndex: state.decks[deckId].questions.length - 1,
+        // question: state.decks[deckId].questions[cardIndex].question,
+        // answer: state.decks[deckId].questions[cardIndex].answer,
+        // incorrectAnswers: state.decks[deckId].questions[cardIndex].incorrectAnswers
     }
 }
 

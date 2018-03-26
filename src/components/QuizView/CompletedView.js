@@ -146,6 +146,7 @@ function mapStateToProps (state, { navigation }) {
 
     return {
         finalCardNum: state[deckId].questions.length,
+        // finalCardNum: state.decks[deckId].questions.length,
         deckId,
         score,
         fail,
