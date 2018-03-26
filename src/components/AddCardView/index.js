@@ -191,8 +191,8 @@ const options = {
         },
         opts: {
             item: {
-                label: 'Incorrect Item',
-                placeholder: 'incorrect answer'
+                    label: 'Incorrect Item',
+                    placeholder: 'incorrect answer'
             }
         },
     },
@@ -223,16 +223,14 @@ class AddCardView extends Component {
         const { deckId } = this.props;
         const value = this._form.getValue();
 
-        if (value) {
-            this.props.loadCard(deckId,value);
-            addCardToDeck(deckId, value);
-            this.clearForm();
-            Toast.show({
-                text: ' The card has been saved successfully',
-                position: 'bottom',
-                buttonText: 'Okay'
-            })
-        }
+        value && this.props.loadCard(deckId,value);
+        value && addCardToDeck(deckId, value);
+        this.clearForm();
+        Toast.show({
+            text: ' The card has been saved successfully',
+            position: 'bottom',
+            buttonText: 'Okay'
+        })
     }
 
 
@@ -241,41 +239,55 @@ class AddCardView extends Component {
 
         return (
             <ScrollView>
-                <View style={styles.container}>
-                    <View style={styles.formContainer}>
-                        <Form
-                            ref={c => this._form = c}
-                            type={Card}
-                            options={options}
+            {/*<Header>*/}
+                {/*<Left>*/}
+                    {/*/!*<Button transparent>*!/*/}
+                        {/*/!*<Entypo*!/*/}
+                            {/*/!*name={ 'menu' }*!/*/}
+                            {/*/!*color = {'black'}*!/*/}
+                            {/*/!*size={30} />*!/*/}
+                    {/*/!*</Button>*!/*/}
+                {/*</Left>*/}
+                {/*<Body>*/}
+                {/*<Title style={{fontSize:20}}>NEW CARD</Title>*/}
+                {/*</Body>*/}
+                {/*<Right />*/}
+            {/*</Header>*/}
+            <View style={styles.container}>
+                <View style={styles.formContainer}>
+                    <Form
+                        ref={c => this._form = c}
+                        type={Card}
+                        options={options}
 
-                        />
+                    />
 
-                        <Button block
-                                onPress={this.handleSubmit}>
-                            <Text>SAVE</Text>
-                        </Button>
+                    <Button block
+                            onPress={this.handleSubmit}>
+                        <Text>SAVE</Text>
+                    </Button>
 
-                        {/* NewDeckView -> AddCardView 로 이동할 때 */}
-                        {/*<Button*/}
+                    {/* NewDeckView -> AddCardView 로 이동할 때 */}
+                    {/*<Button*/}
                         {/*block light*/}
                         {/*onPress={() => this.props.navigation.navigate(*/}
-                        {/*'DeckDetailView',*/}
-                        {/*{ deckId }*/}
+                            {/*'DeckDetailView',*/}
+                            {/*{ deckId }*/}
                         {/*)}>*/}
                         {/*<Text>BACK TO DECK</Text>*/}
-                        {/*</Button>*/}
+                    {/*</Button>*/}
 
-                        {/* NewDeckView -> DeckDetailView 로 이동할 때 */}
-                        <Button
-                            block light
-                            onPress={() =>
-                                this.props.navigation.dispatch(NavigationActions.back())
-                            }>
-                            <Text>GO HOME</Text>
-                        </Button>
-                    </View>
+                    {/* NewDeckView -> DeckDetailView 로 이동할 때 */}
+                    <Button
+                        block light
+                        onPress={() =>
+                            this.props.navigation.dispatch(NavigationActions.back())
+                        }>
+                        <Text>GO HOME</Text>
+                    </Button>
                 </View>
-            </ScrollView>
+            </View>
+        </ScrollView>
         )
     }
 }

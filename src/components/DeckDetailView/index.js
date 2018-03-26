@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { Toast } from 'native-base';
-
 import { View, Text, StyleSheet } from 'react-native'
 import DeckListItem from '../DeckListView/DeckListItem'
 import QuizControl from './QuizControl'
@@ -16,22 +14,17 @@ class DeckDetailView extends Component {
         }
     }
 
-
     shouldComponentUpdate (nextProps) {
         return nextProps.deck !== null && nextProps.deck !== undefined
     }
 
-    onToast = () => {
-        Toast.show({
-            text: 'Create Your Quiz Card!',
-            position: 'bottom',
-            buttonText: 'Okay'
-        })
-    }
-
     render() {
+<<<<<<< HEAD
         const { deck, deckId, questions } = this.props
         console.log('questions :' + questions)
+=======
+        const { deck, deckId } = this.props
+>>>>>>> parent of 9175c08... form modify
         const cardIndex = 0;
         const score = 0;
         const fail = 0;
@@ -41,7 +34,7 @@ class DeckDetailView extends Component {
                 {/*<DeckListItem title={deckId} />*/}
                 <QuizControl
                     name={'START QUIZ'}
-                    onPress={questions ? this.onToast : () => this.props.navigation.navigate(
+                    onPress={() => this.props.navigation.navigate(
                         'QuizView',
                         { deckId, cardIndex, score, fail }
                     )}
@@ -74,8 +67,12 @@ function mapStateToProps (state, { navigation }) {
 
     return {
         deckId,
+<<<<<<< HEAD
         deck: state.decks[deckId],
         questions: state.decks[deckId].questions
+=======
+        deck: state[deckId],
+>>>>>>> parent of 9175c08... form modify
     }
 }
 

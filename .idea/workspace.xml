@@ -13,11 +13,15 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/AddCardView/index.js" afterPath="$PROJECT_DIR$/src/components/AddCardView/index.js" />
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/DeckDetailView/index.js" afterPath="$PROJECT_DIR$/src/components/DeckDetailView/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/DeckListView/index.js" afterPath="$PROJECT_DIR$/src/components/DeckListView/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/NewDeckView/index.js" afterPath="$PROJECT_DIR$/src/components/NewDeckView/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers/index.js" afterPath="$PROJECT_DIR$/src/reducers/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/NewDeckView/index.js" afterPath="$PROJECT_DIR$/src/components/NewDeckView/index.js" />
+>>>>>>> parent of 9175c08... form modify
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,8 +38,13 @@
       <file leaf-file-name="copy.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/AddCardView/copy.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="451">
               <caret line="195" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
+=======
+            <state relative-caret-position="724">
+              <caret line="166" column="29" lean-forward="false" selection-start-line="160" selection-start-column="20" selection-end-line="166" selection-end-column="29" />
+>>>>>>> parent of 9175c08... form modify
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -46,17 +55,28 @@
       <file leaf-file-name="NewDeckForm.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/NewDeckView/NewDeckForm.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="480">
               <caret line="78" column="32" lean-forward="false" selection-start-line="78" selection-start-column="32" selection-end-line="78" selection-end-column="32" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
+=======
+            <state relative-caret-position="-1490">
+              <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+              <folding />
+>>>>>>> parent of 9175c08... form modify
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/AddCardView/index.js">
+=======
+      <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/config/router.js">
+>>>>>>> parent of 9175c08... form modify
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1566">
               <caret line="239" column="22" lean-forward="false" selection-start-line="239" selection-start-column="22" selection-end-line="239" selection-end-column="22" />
@@ -93,6 +113,7 @@
     <findStrings>
       <find>CardView</find>
       <find>AddCardView</find>
+<<<<<<< HEAD
       <find>incorre</find>
       <find>card</find>
       <find>log</find>
@@ -100,6 +121,8 @@
       <find>receiveDecks</find>
       <find>loadDeck</find>
       <find>deck</find>
+=======
+>>>>>>> parent of 9175c08... form modify
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -119,9 +142,13 @@
         <option value="$PROJECT_DIR$/src/components/AddCardView/index.js" />
         <option value="$PROJECT_DIR$/src/components/DeckListView/index.js" />
         <option value="$PROJECT_DIR$/src/components/NewDeckView/index.js" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/components/NewDeckView/NewDeckForm.js" />
         <option value="$PROJECT_DIR$/src/components/AddCardView/copy.js" />
         <option value="$PROJECT_DIR$/src/components/DeckDetailView/index.js" />
+=======
+        <option value="$PROJECT_DIR$/src/components/AddCardView/index.js" />
+>>>>>>> parent of 9175c08... form modify
       </list>
     </option>
   </component>
@@ -297,6 +324,7 @@
       <updated>1521574450828</updated>
       <workItem from="1521574452597" duration="795000" />
       <workItem from="1521575650801" duration="449000" />
+<<<<<<< HEAD
       <workItem from="1521619058198" duration="14708000" />
       <workItem from="1521693581151" duration="150000" />
       <workItem from="1521696007802" duration="344000" />
@@ -306,11 +334,18 @@
       <workItem from="1521993702149" duration="4298000" />
       <workItem from="1522006484435" duration="3475000" />
       <workItem from="1522047216620" duration="3056000" />
+=======
+      <workItem from="1521619058198" duration="8377000" />
+>>>>>>> parent of 9175c08... form modify
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="28516000" />
+=======
+    <option name="totallyTimeSpent" value="9621000" />
+>>>>>>> parent of 9175c08... form modify
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1160" height="1027" extended-state="0" />
@@ -403,6 +438,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+=======
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+>>>>>>> parent of 9175c08... form modify
         </state>
       </provider>
     </entry>
@@ -410,6 +451,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+=======
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+>>>>>>> parent of 9175c08... form modify
         </state>
       </provider>
     </entry>
@@ -437,6 +484,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+<<<<<<< HEAD
+=======
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+>>>>>>> parent of 9175c08... form modify
         </state>
       </provider>
     </entry>
@@ -472,6 +525,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+=======
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+>>>>>>> parent of 9175c08... form modify
         </state>
       </provider>
     </entry>
@@ -479,6 +538,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+=======
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+>>>>>>> parent of 9175c08... form modify
         </state>
       </provider>
     </entry>
@@ -506,6 +571,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+<<<<<<< HEAD
+=======
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+>>>>>>> parent of 9175c08... form modify
         </state>
       </provider>
     </entry>
@@ -555,6 +626,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+=======
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+>>>>>>> parent of 9175c08... form modify
         </state>
       </provider>
     </entry>
@@ -601,7 +678,11 @@
         <state relative-caret-position="3900">
           <caret line="150" column="0" lean-forward="false" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
           <folding>
+<<<<<<< HEAD
             <element signature="e#0#41#0" expanded="false" />
+=======
+            <element signature="e#0#25#0" expanded="true" />
+>>>>>>> parent of 9175c08... form modify
           </folding>
         </state>
       </provider>
@@ -626,7 +707,11 @@
         <state relative-caret-position="520">
           <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
           <folding>
+<<<<<<< HEAD
             <element signature="e#0#25#0" expanded="false" />
+=======
+            <element signature="e#0#40#0" expanded="true" />
+>>>>>>> parent of 9175c08... form modify
           </folding>
         </state>
       </provider>
@@ -636,7 +721,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+<<<<<<< HEAD
             <element signature="e#0#62#0" expanded="false" />
+=======
+            <element signature="e#0#25#0" expanded="true" />
+>>>>>>> parent of 9175c08... form modify
           </folding>
         </state>
       </provider>
@@ -654,7 +743,11 @@
         <state relative-caret-position="156">
           <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
           <folding>
+<<<<<<< HEAD
             <element signature="e#0#26#0" expanded="false" />
+=======
+            <element signature="e#0#40#0" expanded="true" />
+>>>>>>> parent of 9175c08... form modify
           </folding>
         </state>
       </provider>
@@ -672,7 +765,21 @@
         <state relative-caret-position="0">
           <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
           <folding>
+<<<<<<< HEAD
             <element signature="e#0#26#0" expanded="false" />
+=======
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DeckDetailView/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="34" column="22" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="34" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+>>>>>>> parent of 9175c08... form modify
           </folding>
         </state>
       </provider>
@@ -734,13 +841,18 @@
         <state relative-caret-position="451">
           <caret line="195" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
           <folding>
+<<<<<<< HEAD
             <element signature="n#!!doc" expanded="true" />
+=======
+            <element signature="e#0#25#0" expanded="true" />
+>>>>>>> parent of 9175c08... form modify
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/AddCardView/index.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="-1566">
           <caret line="239" column="22" lean-forward="false" selection-start-line="239" selection-start-column="22" selection-end-line="239" selection-end-column="22" />
           <folding>
@@ -757,13 +869,23 @@
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="-1490">
+          <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+          <folding />
+>>>>>>> parent of 9175c08... form modify
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/NewDeckView/NewDeckForm.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="480">
           <caret line="78" column="32" lean-forward="false" selection-start-line="78" selection-start-column="32" selection-end-line="78" selection-end-column="32" />
+=======
+        <state relative-caret-position="724">
+          <caret line="166" column="29" lean-forward="false" selection-start-line="160" selection-start-column="20" selection-end-line="166" selection-end-column="29" />
+>>>>>>> parent of 9175c08... form modify
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
