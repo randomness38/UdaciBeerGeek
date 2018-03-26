@@ -30,8 +30,10 @@ class DeckDetailView extends Component {
     }
 
     render() {
-        const { deck,state, deckId,questions } = this.props
-        console.log(questions)
+        const { deck, deckId,questions } = this.props
+        console.log('questions :' + questions)
+        console.log('deck :' + deck)
+        console.log('deckId :' + deckId)
         const cardIndex = 0;
         const score = 0;
         const fail = 0;
@@ -69,14 +71,13 @@ const styles = StyleSheet.create({
     }
 })
 
-function mapStateToProps (state, { navigation }) {
+function mapStateToProps ( state, {navigation }) {
     const { deckId } = navigation.state.params
 
     return {
-        state: state,
         deckId,
-        deck: state[deckId],
-        questions: state[deckId].questions
+        deck: state.decks[deckId],
+        questions: state.decks[deckId].questions
     }
 }
 

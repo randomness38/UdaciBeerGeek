@@ -141,12 +141,11 @@ const styles = StyleSheet.create({
 })
 
 
-function mapStateToProps (state, { navigation }) {
+function mapStateToProps ({decks}, { navigation }) {
     const { deckId, score, fail } = navigation.state.params
 
     return {
-        finalCardNum: state[deckId].questions.length,
-        // finalCardNum: state.decks[deckId].questions.length,
+        finalCardNum: decks[deckId].questions.length,
         deckId,
         score,
         fail,

@@ -43,8 +43,10 @@ class DeckListView extends Component {
 
 
     render() {
-        const { decks, removeDeck,clearAllDecks } = this.props
-        console.log(decks)
+        const { decks, removeDeck,clearAllDecks ,state} = this.props
+        console.log('state:' + state)
+        // console.log('decks:' + decks['Beer'].questions)
+
         const { ready } = this.state
         if (ready === false) {
             return <AppLoading />
@@ -143,8 +145,8 @@ const styles = StyleSheet.create({
 
 function mapStateToProps (state) {
     return {
-        // state: state,
-        decks: state
+        state,
+        decks: state.decks,
     }
 }
 export default connect(

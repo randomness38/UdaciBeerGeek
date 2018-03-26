@@ -1,7 +1,7 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
-import reducer from '../reducers/index';
+import reducers from '../reducers';
 
 const configureStore = () => {
     const middlewares = [thunk];
@@ -11,7 +11,7 @@ const configureStore = () => {
     }
 
     const store = createStore(
-        reducer,
+        reducers,
         composeEnhancers(applyMiddleware(...middlewares)),
     );
 

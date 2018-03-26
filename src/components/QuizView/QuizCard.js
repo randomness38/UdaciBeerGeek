@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
 
 })
 
-function mapStateToProps (state, { navigation }) {
+function mapStateToProps ({ decks }, { navigation }) {
     const { deckId, cardIndex, score, fail } = navigation.state.params
 
     return {
@@ -121,14 +121,10 @@ function mapStateToProps (state, { navigation }) {
         cardIndex,
         score,
         fail,
-        finalIndex: state[deckId].questions.length - 1,
-        question: state[deckId].questions[cardIndex].question,
-        answer: state[deckId].questions[cardIndex].answer,
-        incorrectAnswers: state[deckId].questions[cardIndex].incorrectAnswers
-        // finalIndex: state.decks[deckId].questions.length - 1,
-        // question: state.decks[deckId].questions[cardIndex].question,
-        // answer: state.decks[deckId].questions[cardIndex].answer,
-        // incorrectAnswers: state.decks[deckId].questions[cardIndex].incorrectAnswers
+        finalIndex: decks[deckId].questions.length - 1,
+        question: decks[deckId].questions[cardIndex].question,
+        answer: decks[deckId].questions[cardIndex].answer,
+        incorrectAnswers: decks[deckId].questions[cardIndex].incorrectAnswers
     }
 }
 

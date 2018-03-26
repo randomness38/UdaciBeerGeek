@@ -179,7 +179,7 @@ const styles = StyleSheet.create({
 })
 
 
-function mapStateToProps ( state, { navigation }) {
+function mapStateToProps ( {decks}, { navigation }) {
     const { deckId } = navigation.state.params
 
     return {
